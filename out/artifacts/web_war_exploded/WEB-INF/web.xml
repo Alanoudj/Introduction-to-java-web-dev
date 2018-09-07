@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd"
+           version="3.1">
+
+    <!--<servlet>-->
+        <!--<servlet-name>Date1</servlet-name>-->
+        <!--<servlet-class>com.date.DateServlet</servlet-class>-->
+
+        <!--<init-param>-->
+            <!--<param-name>databaseName</param-name>-->
+            <!--<param-value>expressions</param-value>-->
+        <!--</init-param>-->
+    <!--</servlet>-->
+    <!---->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>Date1</servlet-name>-->
+        <!--<url-pattern>/currentDate</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+    <!--<servlet>-->
+        <!--<servlet-name>Join</servlet-name>-->
+        <!--<servlet-class>com.date.JoinServlet</servlet-class>-->
+    <!--</servlet>-->
+
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>Join</servlet-name>-->
+        <!--<url-pattern>/join</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+    <!--<servlet>-->
+        <!--<servlet-name>Refactor</servlet-name>-->
+        <!--<servlet-class>com.date.RefactorServlet</servlet-class>-->
+
+    <!--</servlet>-->
+
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>Refactor</servlet-name>-->
+        <!--<url-pattern>/refactor</url-pattern>-->
+    <!--</servlet-mapping>-->
+</web-app>

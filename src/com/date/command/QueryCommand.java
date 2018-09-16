@@ -14,6 +14,6 @@ public class QueryCommand implements  CommandModel {
         List<GeekDatesInfo> matchedProfiles = ProfileManager.getInstance().getProfiles(name);
 
         request.setAttribute("userProfiles", matchedProfiles);
-        return "views/profiles";
+        return "views/profiles.jsp";
     }
 }

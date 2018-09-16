@@ -21,6 +21,6 @@ public class JoinCommand implements CommandModel {
         profile.setAge(Integer.parseInt(age));
         ProfileManager.getInstance().addProfile(profile);
 
-        return "index";
+        return "index.html";
     }
 }

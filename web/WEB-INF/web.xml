@@ -5,39 +5,28 @@
 		  http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd"
            version="3.1">
 
-    <!--<servlet>-->
-        <!--<servlet-name>Date1</servlet-name>-->
-        <!--<servlet-class>com.date.DateServlet</servlet-class>-->
+    <servlet>
+       <servlet-name>FrontControllerServlet</servlet-name>
+       <servlet-class>com.date.FrontControllerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FrontControllerServlet</servlet-name>
+        <url-pattern>/front</url-pattern>
+    </servlet-mapping>
 
-        <!--<init-param>-->
-            <!--<param-name>databaseName</param-name>-->
-            <!--<param-value>expressions</param-value>-->
-        <!--</init-param>-->
-    <!--</servlet>-->
-    <!---->
-    <!--<servlet-mapping>-->
-        <!--<servlet-name>Date1</servlet-name>-->
-        <!--<url-pattern>/currentDate</url-pattern>-->
-    <!--</servlet-mapping>-->
+    <filter>
+        <filter-name>SaadFilter</filter-name>
+        <filter-class>com.date.filters.FirstFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>SaadFilter</filter-name>
+        <url-pattern>/front</url-pattern>
+    </filter-mapping>
 
-    <!--<servlet>-->
-        <!--<servlet-name>Join</servlet-name>-->
-        <!--<servlet-class>com.date.JoinServlet</servlet-class>-->
-    <!--</servlet>-->
-
-    <!--<servlet-mapping>-->
-        <!--<servlet-name>Join</servlet-name>-->
-        <!--<url-pattern>/join</url-pattern>-->
-    <!--</servlet-mapping>-->
-
-    <!--<servlet>-->
-        <!--<servlet-name>Refactor</servlet-name>-->
-        <!--<servlet-class>com.date.RefactorServlet</servlet-class>-->
-
-    <!--</servlet>-->
-
-    <!--<servlet-mapping>-->
-        <!--<servlet-name>Refactor</servlet-name>-->
-        <!--<url-pattern>/refactor</url-pattern>-->
-    <!--</servlet-mapping>-->
+    <jsp-config>
+        <taglib>
+            <taglib-uri>/geek-dates</taglib-uri>
+            <taglib-location>/taglibraries/geek-dates.tld</taglib-location>
+        </taglib>
+    </jsp-config>
 </web-app>

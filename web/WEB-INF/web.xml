@@ -14,6 +14,16 @@
         <url-pattern>/front</url-pattern>
     </servlet-mapping>
 
+
+    <servlet>
+        <servlet-name>DispatcherServlet</servlet-name>
+        <servlet-class>com.summer.controller.DispatcherServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DispatcherServlet</servlet-name>
+        <url-pattern>/summer/*</url-pattern>
+    </servlet-mapping>
+
     <filter>
         <filter-name>SaadFilter</filter-name>
         <filter-class>com.date.filters.FirstFilter</filter-class>
